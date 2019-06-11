@@ -1,0 +1,39 @@
+.header{
+position: fixed; 
+/* デフォ
+ relative 相対位置
+ absolute 絶対位置　左上　位置基準
+ fixed    絶対位置　浮いている　ヘッダーの下に入る
+ */
+top: 0;
+left: 0;
+background-color: red;
+height: 100px;
+width: 100%; 
+
+}
+
+/*divタグはブロック要素なので100％表示*/
+
+
+.main{
+	margin-top: 100px;
+	height: 400px;
+	background-color: blue;
+}
+
+.main2{
+	height: 400px;
+	background-color:brown;
+}
+
+.main3{
+	height: 400px;
+	background-color: skyblue;
+}
+
+.footer{
+	height: 100px;
+	background-color: green;
+}
+/*background-color 背景色*/
