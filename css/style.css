@@ -1,12 +1,126 @@
-.car-header {
-  height: 500px;
+@charset "UTF-8";
+.car_header .car_nav .hamburger span:before, .car_header .car_nav .hamburger span:after {
+  content: "";
+  position: absolute;
 }
 
-.car-header .car-nav {
+.car_header .car_nav .hamburger span, .car_header .car_nav .hamburger span:before, .car_header .car_nav .hamburger span:after {
   width: 100%;
-  background-color: #f353;
+  height: 5px;
+  background-color: #333333;
+  border-radius: 2px;
 }
 
-.car-header .car-nav .main-title {
-  background-color: #234;
+.car_intro {
+  background-color: #000;
+}
+
+.car_intro .car_mv {
+  height: 800px;
+}
+
+.car_header {
+  position: relative;
+}
+
+.car_header .car_nav {
+  display: flex;
+  width: 100%;
+  background-color: #fffff1;
+}
+
+.car_header .car_nav .main_title {
+  font-size: 3rem;
+  padding: 50px 0;
+}
+
+.car_header .car_nav .hamburger {
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 30px;
+  margin: 30px 10px 10px;
+  position: absolute;
+}
+
+.car_header .car_nav .hamburger span {
+  position: relative;
+  display: block;
+}
+
+.car_header .car_nav .hamburger span:before {
+  top: -15px;
+}
+
+.car_header .car_nav .hamburger span:after {
+  top: 15px;
+}
+
+.car_header .car_nav .hamburger:hover span {
+  background-color: transparent;
+  /* 仮　の値*/
+}
+
+.car_header .car_nav .hamburger:hover span:before {
+  transform: rotate(45deg) translate(7px, 9px);
+}
+
+.car_header .car_nav .hamburger:hover span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.car_header .car_inner {
+  padding: 5px 0;
+  height: 150px;
+}
+
+.car_header .car_inner .inner_items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.car_header .car_inner .inner_items .inner_item {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.car_header .car_inner .inner_items .inner_item a {
+  margin: 0 20px;
+}
+
+/* メイン */
+.car_contents {
+  position: relative;
+  /* top: 160px; */
+}
+
+.car_contents #environment {
+  height: 500px;
+  background-color: #eaf2f4;
+}
+
+.car_contents #toyota {
+  height: 500px;
+  background-color: #eaf2f4;
+}
+
+.car_contents #hv {
+  height: 500px;
+  background-color: #eaf2f4;
+}
+
+.car_contents #aqua {
+  height: 500px;
+  background-color: #eaf2f4;
+}
+
+.car_contents #tax {
+  height: 500px;
+  background-color: #eaf2f4;
+}
+
+.car_contents #grade {
+  height: 500px;
+  background-color: #eaf2f4;
 }

@@ -1,12 +1,137 @@
-.car-header{
-	height: 500px;
+%hamburger_relative{
+	position: relative;
+    display: block;
+}
 
-	.car-nav{
+%hamburger_absolute{
+
+	content: "";
+  	position: absolute;
+}
+
+ %hamburger_main{
+	width: 100%;
+	height: 5px;
+	background-color: #333333;
+	//時間的変化のアニメーション
+	//transition: all 0.5s ease; //0.5秒　推移
+	border-radius: 2px;
+}
+
+.car_intro{
+	background-color: #000; //とりあえず置いておきます
+
+	.car_mv{
+		height: 800px;
+
+	}
+
+}
+
+
+
+.car_header{
+	position: relative;
+
+	.car_nav{
+		display: flex;
 		width: 100%;
-		background-color: #f353;
+		background-color: #fffff1;
 
-		.main-title{
-			background-color: #234;
+		.main_title{
+			font-size: 3rem;
+			padding: 50px 0;
 		}
+		.hamburger{
+			top: 20px;
+			right: 20px;
+			width: 50px;
+			height: 30px;
+			margin: 30px 10px 10px;
+			position: absolute;
+			span{
+				position: relative;
+				display: block;
+				@extend %hamburger_main;
+				&:before{
+					@extend %hamburger_absolute;
+					@extend %hamburger_main;
+					top: -15px;	
+				}
+				&:after{
+					@extend %hamburger_absolute;
+					@extend %hamburger_main;
+					top: 15px;
+				}
+			}
+			&:hover{
+				span{
+					background-color: transparent;
+					/* 仮　の値*/
+					&:before{
+						transform: rotate(45deg) translate(7px,9px);
+					}
+					&:after{
+						transform: rotate(-45deg) translate(7px, -8px);
+					}
+				}
+
+			}
+		}
+	}
+	.car_inner{
+		padding: 5px 0;
+		height: 150px;
+		.inner_items{
+			display: flex;
+			justify-content: space-around;
+
+			.inner_item{
+				padding: 20px 0;
+				display: flex;
+				align-items: center;
+				a{
+					margin: 0 20px;
+				}
+			}	
+		}
+	}
+
+}
+
+/* メイン */
+
+.car_contents{
+	position: relative;
+	top: 160px; */ 　/* ここを指定することでメニューバーが隠れる */	
+
+	#environment{
+		height: 500px;
+		background-color: #eaf2f4;
+	}
+
+	#toyota{
+		height: 500px;
+		background-color: #eaf2f4;
+	}
+
+	#hv{
+		height: 500px;
+		background-color: #eaf2f4;
+	}
+
+	#aqua{
+		height: 500px;
+		background-color: #eaf2f4;
+	}
+
+	#tax{
+		height: 500px;
+		background-color: #eaf2f4;
+	}
+
+	#grade{
+		height: 500px;
+		background-color: #eaf2f4;
 	}
 }
