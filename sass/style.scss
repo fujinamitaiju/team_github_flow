@@ -1,3 +1,12 @@
+/* 文字コードの指定
+------------------------------------------------------------*/
+@charset "UTF-8";
+
+/* Google Fonts用のCSSを読み込み
+------------------------------------------------------------*/
+@import 'https://fonts.googleapis.com/css?family=Abel';
+
+/* font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif; */
 %hamburger_relative{
 	position: relative;
     display: block;
@@ -18,17 +27,11 @@
 	border-radius: 2px;
 }
 
-.car_intro{
-	background-color: #000; //とりあえず置いておきます
 
-	.car_mv{
-		height: 800px;
-
-	}
-
+html /* root */
+{
+    font-size: 62.5%; /* =10px =100% */
 }
-
-
 
 .car_header{
 	position: relative;
@@ -36,12 +39,8 @@
 	.car_nav{
 		display: flex;
 		width: 100%;
-		background-color: #fffff1;
-
-		.main_title{
-			font-size: 3rem;
-			padding: 50px 0;
-		}
+		height: 100px;
+		background-color: #223061;
 		.hamburger{
 			top: 20px;
 			right: 20px;
@@ -103,35 +102,205 @@
 
 .car_contents{
 	position: relative;
-	top: 160px; */ 　/* ここを指定することでメニューバーが隠れる */	
-
-	#environment{
-		height: 500px;
-		background-color: #eaf2f4;
+	.car_mv{
+		width: 100%;
+		height: 1080px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		.mv_aqua{
+			background-color: #000;
+			margin-bottom: 50px;
+			width: 40%;
+			text-align: right;
+		}
+		.mv_concept{
+			color: #000;
+			font-family: fot-tsukuardgothic-std, sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 3.5rem;
+			letter-spacing: 20px;
+			line-height: 50px;
+		}
+		
 	}
+	#environment{
+		width: 100%;
+		margin-bottom: 150px;
+		.main_message{
+				margin-bottom: 60px;
+				width: 100%;
+			}
+		.container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			
+			.message{
+				font-family: fot-tsukuardgothic-std, sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 30px;
+				color: #223061;
+				line-height: 30px;
+				margin-bottom: 90px;
 
-	#toyota{
-		height: 500px;
-		background-color: #eaf2f4;
+			}
+		}
+		.tsf{
+			width: 100%;
+			padding: 50px 0;
+			/* height: 970px; */
+			background-color: #2E77C4;
+			font-family: "Hiragino Kaku Gothic ProN";
+			font-weight: 4;
+			.title_tsf{
+				display: flex;
+				flex-direction: row;
+				color: #DAEDF4;
+				margin: 50px 10px;
+				.main_tsf{
+					width: 50%;
+					display: flex;
+					flex-direction: column;
+					font-family: futura-pt, sans-serif;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 75px;
+
+				}
+				.sub_tsf{
+					width: 50%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					font-family: "Hiragino Kaku Gothic ProN";
+					line-height: 50px;
+					.title{
+						font-size: 30px;
+						font-weight: 600;
+						margin-bottom: 20px;
+					}
+					.info{
+						font-size: 15px;
+						letter-spacing: 1px;
+						line-height: 30px;
+					}
+				}
+			}
+			.tsfboxies{
+				margin-top: 30px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				.tsfbox{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					width: 50%;
+					img{
+						width: 80%;
+						height: auto;
+						margin-bottom: 20px;
+						&:last-child{
+							margin-left: 40px;
+						} 
+					}
+					p{
+						font-size: 15px;
+						line-height: 20px;
+						width: 60%;
+						color: #daedf4;
+					}
+					
+				}
+			}
+		}
 	}
 
 	#hv{
-		height: 500px;
-		background-color: #eaf2f4;
-	}
+		width: 100%;
+		h1{
+			text-align: center;
+			color: #2A92DB;
+			font-size: 50px;
+		}
+		.container{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+			margin-top: 30px;
+			.hv_items{
+				width: 200px;
+				height: 100px;
+				font-size: 25px;
+				color: #2A92DB;
+				border: solid 2px #2A92DB;
+				margin-right: 20px;
+				.hv_s{
+					margin-left: 30px;
+					margin-top: 30px;
+				}
 
-	#aqua{
-		height: 500px;
-		background-color: #eaf2f4;
-	}
+			} .hv_items_best{ 
+				width: 400px; 
+				height: 150px; 
+				font-size: 30px;
+				 color:#fff; 
+				 background-color: #2A92DB; 
+				 border: solid 2px #2A92DB; 
+				 .hv_s{
+				 	margin-left: 60px; 
+				 	margin-top: 40px; 
+				 } 
+			} 
+		} 
+		.hv_info{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			.info_items{
+				width: 200px;
+				height: 100px;
 
-	#tax{
-		height: 500px;
-		background-color: #eaf2f4;
-	}
 
-	#grade{
-		height: 500px;
-		background-color: #eaf2f4;
-	}
+			}
+
+		}
+		h2{
+			font-size: 45px;
+			color: #223061;
+			text-align: center;
+		}
+		.sphv{
+			position: relative;
+			width: 90%;
+			height: 500px;
+			background-color: #DAEDF4;
+			margin: 0 auto;
+			display: flex;
+			
+			.cont{
+				height: 40%;
+				margin-top: 50px;
+				margin-left: 50px;
+				.info{
+					list-style: none;
+					color: #223061;
+					font-size: 20px;
+					
+				}
+			}
+			.hv_car{
+			position: absolute;
+			right: 5px;
+			top: 30px;
+		}
+
+		}
+
+	} 
 }

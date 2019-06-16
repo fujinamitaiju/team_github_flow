@@ -33,13 +33,24 @@
 <!-------CSSタグ---------------->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<script>
+	  (function(d) {
+	    var config = {
+	      kitId: 'ugo6iym',
+	      scriptTimeout: 3000,
+	      async: true
+	    },
+	    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
 </head>
 <body>
 
 
 	<header class="car_header">
 		<div class="car_nav">
-			<h1 class="main_title">タイトル</h1>
 			<div class="hamburger">
 				<span></span>
 			</div>
@@ -63,8 +74,13 @@
 	<main class="car_contents">
 
 		<div class="car_mv">
-			
+				<img class="mv_aqua" src="image/logo.png" alt="aqua">
+				<div class="mv_concept">
+					<p>あの時行った海の青を、</p>
+					<p> 100年先まで守るクルマ</p>
+				</div>
 		</div>
+
   
 
 
@@ -74,20 +90,83 @@
 
 	<!-- 環境------------------------>
 		<section id="environment">
-			<h1>環境</h1>
-			<div class=""></div>
-		</section>
+			<img class="main_message" src="image/environment.png" alt="環境についてのメッセージ">
+			<div class="container">
+				<div class="message">
+					<p>未来の子どもたちに</p>
+					<p>「環境を壊すクルマがあったんだって」</p>
+					<p>そんな風に言ってほしい。</p>
+				</div>
+				<div class="message">
+					<p>アクアが目指すのは、</p>
+					<p>今よりちょっと素敵な世界。</p>
+				</div>
 
-	<!-- TOYOTAについて------------------------>
-		<section id="toyota">
-			<h1>TOYOTA</h1>
-			<div class=""></div>
+			</div>
+			<div class="tsf">
+				<div class="title_tsf">
+					<div class="main_tsf">
+						<p>地球とTOYOTA</p>
+					</div>
+
+					<div class="sub_tsf">
+						<div class="title">
+							<p>地球環境に寄り添う意識を持ち続ける</p>
+						</div>
+						<div class="info">
+							<p>私たちは、トヨタが行う全ての活動について、地球環境への配慮を忘れません。そのために、私たちは環境に配慮したシステムやソリューションの研究・普及に努めます。</p>
+						</div>
+					</div>
+				</div>
+				<div class="tsfboxies">
+					<div class="tsfbox">
+						<img src="image/ASFshare.png" alt="TSF">
+						
+							<p>活動のテーマは「次世代の環境のために」。 ハイブリッド車などに込められた、「より良い未来を作る」という想いのもと、地域の未来を作る活動を全国で行なっています。</p>
+						
+						
+					</div>
+					<div class="tsfbox">
+						<img src="image/challenge2050_ogp_001.png" alt="TSF">
+						
+						<p>人とクルマと自然が共生する社会を目指して、トヨタは走り続けます。 クルマの環境負荷をゼロに近づけるとともに、地球・社会にプラスとなる取り組みを実施しています。</p>
+					</div>
+				</div>
+				
+			</div>
 		</section>
 
 	<!-- HV車------------------------>
 		<section id="hv">
-			<h1>HV</h1>
-			<div class=""></div>
+			<h1>HV車について</h1>
+			<div class="container">
+				<div class="hv_items">
+					<div class="hv_s">シリーズ<p>ハイブリッド</p>
+					</div>
+				</div>
+				<div class="hv_items"><div class="hv_s">パラレル<p>ハイブリッド</p></div></div>
+				<div class="hv_items_best"><div class="hv_s">シリーズ・パラレル<p>ハイブリッド</p></div></div>
+			</div>
+			<div class="hv_info">
+				<div class="info_items">エンジンは発電のみに使用し、駆動は電動モーターによって行う。</div>
+				<div class="info_items">モーターによるアシストを加えることで車を加速させる。</div>
+				<div class="info_items"><span>AQUA</span>は シリーズ・パラレルハイブリッド！</div>
+			</div>
+			<h2>シリーズ・パラレルハイブリッドて？</h2>
+			<div class="sphv">	
+				<div class="cont">
+					<div class="info">
+						<li>トヨタだからできた高機能ハイブリット！</li>
+						<li>シリーズ方式とパラレル方式のメリットを合わせもつハイブリッドシステム。 </li>
+						<li> エンジンのみよりも高い加速性能に加え、</li>
+						<li>抜群の燃費を実現。</li>
+						<li>走行状態にあわせて、もっとも効率のよいエンジンとモーターの動作割合で駆動することができます！ </li>
+						<li> 長距離走行も楽しくラクラク！</li>
+					</div>
+				</div>
+				<img class="hv_car" src="image/S6.png" alt="aqua" width="60%">
+			</div>
+
 		</section>
 	<!-- Aqua------------------------>
 		<section id="aqua">
