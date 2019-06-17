@@ -332,7 +332,7 @@ html /* root */
 			}
 		}
 	} 
-	#aqua{
+	#feature{
 		width: 100%;
 		h1{
 			text-align: center;
@@ -341,7 +341,7 @@ html /* root */
 			font-family: fot-tsukuardgothic-std, sans-serif;
 			font-style: normal;
 		}
-		.forture{
+		.feature{
 			width: 80%;
 			display: flex;
 			flex-wrap: wrap;
@@ -436,5 +436,211 @@ html /* root */
 			}
 		}
 	}
+	#aqua{
+		h1{
+			color: #3B96A8;
+			font-family: futura-pt, sans-serif;
+			font-style: normal;
+			font-size: 100px;
+			text-align: center;
+			margin: 100px 0;
+		}
 
+		.aqua_goal{
+			font-family: fot-tsukuardgothic-std, sans-serif;
+			font-style: normal;
+			font-size: 30px;
+			color: #223061;
+			letter-spacing: 10px;
+			line-height: 30px;
+			text-align: center;
+			font-weight: 500;
+   			margin-bottom: 50px;
+		}
+		.view{
+			width: 100%;
+			margin: 0 auto;
+
+		}
+		.aqua_items{
+			margin: 100px 0;
+
+
+			.container{
+				width: 70%;
+				height: 300px;
+				border: 4px solid #3B96A8; 
+				margin: 40px auto;
+				h2{
+					font-color: #223061;
+					font-family: fot-tsukuardgothic-std, sans-serif;
+					font-style: normal;
+					font-size: 45px;
+					margin: 20px;
+				}
+				.box{
+					display: flex;
+					margin: 0 20px;
+					.car_img{
+
+						img{
+							width: 470px;
+						}
+					}
+					.car_info{
+						font-size: 25px;
+						margin: 0 20px 20px;
+						color: #223061;
+						text-align: right;
+						p{
+							padding-bottom: 60px;
+						}
+						.link{
+							text-decoration: none;
+							width: 60px;
+							color: #fff;
+							background-color: #3B96A8;
+							padding: 5px 100px; 
+
+						}
+					}
+					.car_info_left{
+						font-size: 25px;
+						margin: 0 20px 20px;
+						color: #223061;
+						text-align: left;
+						p{
+							padding-bottom: 60px;
+						}
+						.link{
+							text-decoration: none;
+							width: 60px;
+							color: #fff;
+							background-color: #3B96A8;
+							padding: 5px 100px; 
+
+						}
+					}
+				}
+			}
+		}
+	}
+	#grade{
+		font-family: futura-pt, sans-serif;
+		font-style: normal;
+		color: #223061;
+		margin-bottom: 200px;
+		h1{
+			color: #3B96A8;
+			
+			font-size: 80px;
+			text-align: center;
+			margin: 100px 0;
+		}
+		.container{
+			display: flex;
+			margin: 30px;
+			padding: 30px;
+
+
+			.grade_kind{
+				width: 30%;
+				display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    font-size: 40px;
+			    margin: 0 auto;
+			    h2{
+			    	text-align: left;
+			    	align-self: flex-start;
+				
+			    	span{
+				    	font-family: fot-tsukuardgothic-std, sans-serif;
+						font-style: normal;
+				    	font-size: 20px;
+				    	margin-right: 5px;
+			     	}
+				}
+			    .line{
+			    	width: 100%;
+			    	size: 2px;
+			    	border-color: #223061;
+			    	background-color: #223061;
+
+			    }
+			    .car_img{
+					margin-bottom: 30px;
+			    }
+			    .rich{
+			    	margin-bottom: 75px;
+			    }
+			    .info{
+			    	margin: 20px 0;
+			    	span{
+			    		font-family: fot-tsukuardgothic-std, sans-serif;
+						font-style: normal;
+				    	font-size: 20px;
+			    	}
+			    }
+			    .safety{
+			    	position: relative;
+			    	margin: 0 20px;
+			    	p{
+			    		position: absolute;
+			    		left: 40px;
+    					bottom: 30px;
+    					color: #fff;
+
+			    	}
+			    }    
+			}
+		}
+	}
+	.message{
+		margin: 40px auto;
+		color: #223061;
+		text-align: center;
+		font-size: 30px;
+		font-family: fot-tsukuardgothic-std, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 10px;
+		line-height: 49px;
+		list-style: none; 
+
+		li{
+			&:last-child{
+				margin-top: 100px;
+			}
+		}
+
+
+	}
+	.grade_link{
+		display: inline-block;
+		margin: 0 100px;
+		text-align: center;
+		width: 80%;
+		padding: 20px 0;
+		background-color: #3B96A8;
+		color: #fff;
+		text-decoration: none;
+		font-size: 60px;
+		box-shadow: 8px 8px 16px #223061;
+		
+	}
+	#evaluation{
+		height: 1000px;
+		background-color: #2E77C4;
+		h1{
+			font-size: 120px;
+			font-family: fot-tsukuardgothic-std, sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			text-align: center;
+			color: #fff;
+			padding: 100px 0 50px;
+
+		}
+	}
 }
