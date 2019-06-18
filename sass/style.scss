@@ -38,9 +38,20 @@ html /* root */
 
 	.car_nav{
 		display: flex;
+		align-items: center;
+		justify-content: space-around;
 		width: 100%;
 		height: 100px;
 		background-color: #223061;
+
+		li{
+			a{
+				font-size: 30px;
+				color: #fff;
+    			text-decoration: none;
+    			margin-right: 30px;
+			}
+		}
 		.hamburger{
 			top: 20px;
 			right: 20px;
@@ -78,6 +89,8 @@ html /* root */
 			}
 		}
 	}
+	
+
 	/* .car_inner{
 		position: relative;
 		padding: 5px 0;
@@ -236,44 +249,55 @@ html /* root */
 		}
 		.container{
 			display: flex;
-			flex-flow: row wrap;
+			flex-direction: row;
 			align-items: center;
 			justify-content: center;
 			margin-top: 30px;
-			.hv_items{
-				width: 200px;
-				height: 100px;
-				font-size: 25px;
-				color: #2A92DB;
-				border: solid 2px #2A92DB;
-				margin-right: 20px;
+			.hv_container{
+				display: flex;
+				flex-direction: column;
+				height: 300px;
+				width: 30%;
+                align-items: center;
+                justify-content: center;
 				.hv_s{
-					margin-left: 30px;
-					margin-top: 30px;
+					width:50%;
+					height: 100px;
+   					border: 2px solid #2A92DB;
+   					display: flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    font-size: 25px;
+				    margin-bottom: 30px;
+				    p{
+				    	margin-top: 10px;
+				    	margin-left: 10px;
+				    	color: #2A92DB;
+				    	font-size: 20px;
+				    }
+
 				}
+				.best{
+					width: 100%;
+					height: 150px;
+					background-color: #2A92DB;
+					font-size: 30px;
 
-			} .hv_items_best{ 
-				width: 400px; 
-				height: 150px; 
-				font-size: 30px;
-				 color:#fff; 
-				 background-color: #2A92DB; 
-				 border: solid 2px #2A92DB; 
-				 .hv_s{
-				 	margin-left: 60px; 
-				 	margin-top: 40px; 
-				 } 
-			} 
-		} 
-		.hv_info{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			.info_items{
-				width: 200px;
-				height: 100px;
+					p{
+						color: #fff;
 
 
+					}
+				}
+				.info_items{
+					width: 50%;
+					font-size: 20px;
+					color: #223061;
+				}
+				.info_items_best{
+					font-size: 25px;
+					color: #2A92DB;
+				}
 			}
 
 		}
@@ -281,6 +305,7 @@ html /* root */
 			font-size: 45px;
 			color: #223061;
 			text-align: center;
+			margin :30px 0;
 		}
 		.sphv{
 			position: relative;
@@ -326,6 +351,7 @@ html /* root */
 				font-family: fot-tsukuardgothic-std, sans-serif;
 				font-style: normal;
 				font-weight: 700;
+				margin: 40px;
 				p{
 					margin: auto 0;
 				}
@@ -340,6 +366,7 @@ html /* root */
 			font-size: 100px;
 			font-family: fot-tsukuardgothic-std, sans-serif;
 			font-style: normal;
+			margin: 100px 0;
 		}
 		.feature{
 			width: 80%;
@@ -460,13 +487,23 @@ html /* root */
 		.view{
 			width: 100%;
 			margin: 0 auto;
+			display: flex;
+			img{
+				margin: 0 auto; 
+				width:50%;
+				height: 50%;
+			}
 
 		}
 		.aqua_items{
+			display: flex;
+			flex-direction: column;
 			margin: 100px 0;
 
 
 			.container{
+				flex-direction: column;
+   				display: flex;
 				width: 70%;
 				height: 300px;
 				border: 4px solid #3B96A8; 
@@ -493,14 +530,15 @@ html /* root */
 						color: #223061;
 						text-align: right;
 						p{
-							padding-bottom: 60px;
+							padding-bottom: 50px;
 						}
 						.link{
 							text-decoration: none;
-							width: 60px;
+							
 							color: #fff;
 							background-color: #3B96A8;
-							padding: 5px 100px; 
+							text-align: center;
+							padding: 0 40px;
 
 						}
 					}
@@ -510,14 +548,15 @@ html /* root */
 						color: #223061;
 						text-align: left;
 						p{
-							padding-bottom: 60px;
+							padding-bottom: 50px;
 						}
 						.link{
 							text-decoration: none;
-							width: 60px;
+							
 							color: #fff;
 							background-color: #3B96A8;
-							padding: 5px 100px; 
+							text-align: center;
+							padding: 0 40px;
 
 						}
 					}
@@ -569,9 +608,12 @@ html /* root */
 
 			    }
 			    .car_img{
+			    	width: 100%;
 					margin-bottom: 30px;
+
 			    }
 			    .rich{
+
 			    	margin-bottom: 75px;
 			    }
 			    .info{
@@ -583,6 +625,7 @@ html /* root */
 			    	}
 			    }
 			    .safety{
+			    	display: flex;
 			    	position: relative;
 			    	margin: 0 20px;
 			    	p{
@@ -630,10 +673,12 @@ html /* root */
 		
 	}
 	#evaluation{
-		height: 1000px;
+		color: #fff;
+		font-family: fot-tsukuardgothic-std, sans-serif;
+		font-style: normal;
 		background-color: #2E77C4;
 		h1{
-			font-size: 120px;
+			font-size: 90px;
 			font-family: fot-tsukuardgothic-std, sans-serif;
 			font-style: normal;
 			font-weight: 600;
@@ -642,5 +687,188 @@ html /* root */
 			padding: 100px 0 50px;
 
 		}
+		.car_line{
+			width: 90%;
+			background-color: #000;
+			border-color: #000;
+		}
+		.container{
+			width: 90%;
+			display: flex;
+			justify-content: space-around;
+			.car_eval{
+				display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    justify-content: center;
+				color: #fff;
+				font-size:70px;
+				.tukusi{
+					padding-bottom: 30px;
+					font-family: fot-tsukuardgothic-std, sans-serif;
+					font-style: normal;
+					font-size: 40px;
+				}
+				.star{
+					position: relative;
+					.star-front{
+						width: 90%;
+						position: absolute;
+					  	top: 0;
+					  	left: 0;
+					  	overflow: hidden;
+					  	color: #fff;
+					}
+					.star-back{
+						color: #2E77C4;
+					}
+				}
+				.futura{
+					font-family: futura-pt, sans-serif;
+					font-style: normal;
+					font-size: 300px;
+				}
+				
+			}
+			.car_img{
+				width: 70%;
+				height: 70%;
+			}
+		}
+		h2{
+			font-size: 50px;
+			text-align: center;
+			margin: 100px 0;
+		}
+		.everyone{
+			text-align: center;
+			font-size: 35px;
+			color: #223061;
+			padding: 20px 0;
+			p{
+				padding: 20px;
+			}
+		}
+		.review{
+			display: flex;
+			text-align: center;   
+		    flex-direction: column;
+		    align-items: center;
+			.items{
+				width: 80%;
+				margin: 50px 20px;
+
+			}
+		}
+	}
+	#tax_redction{
+		h1{
+			text-align: center;
+			color: #2A92DB;
+			font-size: 80px;
+			font-family: fot-tsukuardgothic-std, sans-serif;
+			font-style: normal;
+			margin: 100px 0;
+
+		}
+		.red{
+			width: 60%;
+			text-align: center;
+			color: #2A92DB;
+			font-size: 30px;
+			font-family: fot-tsukuardgothic-std, sans-serif;
+			font-style: normal;
+			margin: 0 auto;
+		}
+		.taxbox{
+			width: 250px;
+			background-color: #2A92DB;
+			color: #fff;
+			font-size: 27px;
+			margin: 30px;
+			.grade{
+				margin-bottom: 20px;
+				padding: 10px 0;
+			}
+
+			p{
+				background-color: #fff;
+				color: #2A92DB;
+				font-size: 40px;
+				padding: 20px 0;
+			}
+		}
+		.genzei{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			img{
+				width: 70%;
+				height: 70%;
+			}
+		}
+		.item{
+			text-align: center;
+			font-size: 25px;
+			color: #223061;
+			font-family: fot-tsukuardgothic-std, sans-serif;
+			font-style: normal;
+			margin: 50px 0;
+		}
+		.white{
+			width: 100%;
+			display: flex;
+			align-items: center;
+
+
+			img{
+				width: 50%;
+				height: 50%;
+				margin: 0 auto;
+			}
+
+		}
+		.item_main{
+			text-align: center;
+			font-size: 40px;
+			color: #223061;
+			font-family: fot-tsukuardgothic-std, sans-serif;
+			font-style: normal;
+			margin: 100px 0;
+		}
+		.link{
+			text-align: center;
+			margin: 100px;
+			a{
+				display: flex;
+				width: 600px;
+				height: 150px;
+				margin: 0 auto;
+			    justify-content: center;
+			    align-items: center;
+			    color: #fff;
+			    background-color: #2E77C4;
+			    font-family: fot-tsukuardgothic-std, sans-serif;
+				font-style: normal;
+				font-size: 40px;
+				border-radius: 10px;
+				text-decoration: none; 
+				box-shadow: 8px 8px 16px #223061;
+
+
+			}
+		}
+
+
+
+
+	}
+	footer{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		height: 100px;
+		background-color: #223061;
 	}
 }

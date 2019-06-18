@@ -56,10 +56,19 @@
 
 
 	<header class="car_header">
-		<div class="car_nav">
-			<div class="hamburger">
+		<div>
+			<ul class="car_nav">
+				<li><a href="#">TOP</a></li>
+				<li><a href="#environment">TOYOTA</a></li>
+				<li><a href="#hv">HV車</a></li>
+				<li><a href="#feature">AQUA</a></li>
+				<li><a href="#evaluation">試乗評価</a></li>
+				<li><a href="#tax_redction">減税について</a></li>
+			</ul>
+			
+			<!-- <div class="hamburger">
 				<span></span>
-			</div>
+			</div> -->
 		</div>
 		<!-- <div class="car_inner">
 		
@@ -149,19 +158,38 @@
 		<section id="hv">
 			<h1>HV車について</h1>
 			<div class="container">
-				<div class="hv_items">
-					<div class="hv_s">シリーズ<p>ハイブリッド</p>
+				<div class="hv_container">
+					
+					<div class="hv_s">
+						<p>シリーズ</p>
+						<p>ハイブリッド</p>
+				    </div>
+					<div class="info_items">エンジンは発電のみに使用し、駆動は電動モーターによって行う。
 					</div>
 				</div>
-				<div class="hv_items"><div class="hv_s">パラレル<p>ハイブリッド</p></div></div>
-				<div class="hv_items_best"><div class="hv_s">シリーズ・パラレル<p>ハイブリッド</p></div></div>
+				<div class="hv_container">
+					
+					<div class="hv_s">
+						<p>パラレル</p>
+						<p>ハイブリッド</p>
+					</div>	
+				    
+					<div class="info_items">モーターによるアシストを加えることで車を加速させる。
+					</div>
+				</div>
+				<div class="hv_container">
+						<div class="hv_s best">
+							<p>シリーズ・パラレル</p>
+							<p>ハイブリッド</p>
+						</div>	
+					<div class="info_items_best"><p>AQUAは</p>シリーズ・パラレルハイブリッド！
+					</div>
+				</div>
 			</div>
-			<div class="hv_info">
-				<div class="info_items">エンジンは発電のみに使用し、駆動は電動モーターによって行う。</div>
-				<div class="info_items">モーターによるアシストを加えることで車を加速させる。</div>
-				<div class="info_items"><span>AQUA</span>は シリーズ・パラレルハイブリッド！</div>
-			</div>
-			<h2>シリーズ・パラレルハイブリッドて？</h2>
+
+
+			
+			<h2>シリーズ・パラレルハイブリッドって？</h2>
 			<div class="sphv">	
 				<div class="cont">
 					<div class="info">
@@ -236,9 +264,9 @@
 			</div>
 			<div class="slick">
 			<li class="view"><img src="image/gaikan3.png" alt=""></li>
+			<!-- <li class="view"><img src="image/gaikan3.png" alt=""></li>
 			<li class="view"><img src="image/gaikan3.png" alt=""></li>
-			<li class="view"><img src="image/gaikan3.png" alt=""></li>
-			<li class="view"><img src="image/gaikan3.png" alt=""></li>
+			<li class="view"><img src="image/gaikan3.png" alt=""></li> -->
 			</div>
 
 			<div class="aqua_items">
@@ -359,9 +387,77 @@
 		<section id="evaluation">
 
 			<h1>試乗評価</h1>
-			<div class="car_line"></div>
+			<hr class="car_line">
+			<div class="container">
+				<div class="car_eval">
+					<p class="tukusi">5月の総合評価</p>
+					<div class="star">
+					<div class="star-front">★★★★★</div>
+					<div class="star-back">★★★★★</div>
+					</div>
+					<p class="futura">4.8</p>
+				</div>
+				<img src="image/S.png" alt="" class="car_img">
+			</div>
+			<hr class="car_line">
+			<h2>みんなのレビュー</h2>
+			<div class="everyone">
+				<p>毎月更新中！</p>
+				<p>試乗の際にぜひ、あなたのお声もお聞かせください。</p>
+			</div>
+
+			<div class="review">
+				<p><img src="image/hyouka_1.png" alt="1" class="items"></p>
+				<p><img src="image/hyouka_2.png" alt="2" class="items"></p>
+				<p><img src="image/hyouka_3.png" alt="3" class="items"></p>
+				<p><img src="image/hyouka_4.png" alt="4" class="items"></p>
+			</div>
+		</section>
+
+		<!-- ボタン資料請求 -------------------------->
+		<div class="menu">
+			<a href="" class="button">試乗予約<img class="icon" src="image/car.svg" alt="car"></a>
+			<a href="" class="button">資料請求<img class="icon" src="image/book.svg" alt=""></a>
+			<a href="" class="button">販売店検索<img class="icon" src="image/shop.svg" alt=""></a>
+			<a href="" class="button">見積もり<img class="icon" src="image/note.svg" alt=""></a>
+		</div>
+<!-- 減税 -------------------------->
+		<section id="tax_redction">
+			<h1>減税について</h1>
+			<div class="red">排出ガス性能及び燃費性能に優れた自動車に対して、それらの性能に応じて、自動車重量税と自動車取得税を免税・軽減するものです。
+				</div>
+			<div class="taxbox">
+				<div class="grade">アクア対象グレード</div>
+				<p>Sの場合</p>
+			</div>
+			<div class="genzei">
+				<img src="image/genzei.png" alt="">
+			</div>
+
+			<div class="item">
+				<p>地球のためにちょっと良いこと。 </p>
+				<p>お財布にもちょっと良いこと。 </p>
+				<p>これからの未来のクルマがアクアです。</p>
+			</div>
+			<div class="white" >
+				<img src="image/S6.png" alt="">
+			</div>
+			<div class="item_main">
+				<p>トヨタは、</p>
+				<p>人が自然と共生する社会を作っていきます。</p>
+			</div>
+
+			<div class="item">
+				<p>アクアが目指すのは、</p>
+				<p> 今よりちょっと素敵な世界。</p>
+				<p> 明日の「いいね」を </p>
+				<p>アクアと。みんなで。</p>
+			</div>
+
+			<div class="link">
+				<a href="">>まずは試乗予約から</a>
+			</div>
 			
-			<div class="car_line"></div>
 		</section>
 
 
@@ -374,16 +470,16 @@
 
 
 
-		<div class="a">dsds</div>
+		<footer></footer>
 </main>
 
 
 
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-				
+<!-- 
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
  <script src="js/main.js"></script>
- -->
+ 
 </body>
 </html>
